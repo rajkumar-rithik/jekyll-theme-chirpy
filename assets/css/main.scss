@@ -242,7 +242,8 @@ $sidebar-display: "sidebar-display";
       transform: scale(1.2);
     }
   }
-} // #avatar
+} // #
+
 
 #site-title {
   text-align: center;
@@ -1358,14 +1359,13 @@ table {
   #profile-wrapper {
     margin-top: 4rem;
     margin-bottom: 3rem;
-    padding-left: 18%;
     -ms-flex-direction: column!important;
   }
 
   #avatar {
     -webkit-box-pack: normal !important;
     -ms-flex-pack: normal !important;
-    justify-content: normal !important;
+    justify-content: center !important;
     >a {
       width: 6.2rem;
       height: 6.2rem;
@@ -1398,7 +1398,6 @@ table {
 
   #site-subtitle {
     word-spacing: 0;
-    padding-right: 3rem;
     margin: .3rem 0 0 0;
   }
 
