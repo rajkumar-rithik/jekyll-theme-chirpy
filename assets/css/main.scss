@@ -1404,7 +1404,7 @@ table {
   #sidebar {
     width: $sidebar-width-large;
     ul {
-      margin-left: 5%;
+      margin-left: 0%;
       >li>a {
         padding-left: 2.5rem;
         -webkit-box-pack: start!important;
@@ -1427,8 +1427,6 @@ table {
     }
 
     .sidebar-bottom {
-      margin-left: 3.5rem;
-      margin-right: 3rem;
       font-size: 1.3rem;
       a {
         border: 1px solid;
