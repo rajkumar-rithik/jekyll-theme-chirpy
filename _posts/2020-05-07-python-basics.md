@@ -1,12 +1,13 @@
 ---
-title: Python Basics
+title: Python Basics Tutorial for Beginners
 author: Raj Kumar
 date: 2020-05-07 11:33:00 +0800
 categories: [Python, Basic]
 tags: [python]
+cover: https://dz2cdn1.dzone.com/thumbnail?fid=13399828&w=740
+image: https://dz2cdn1.dzone.com/thumbnail?fid=13399828&w=740
 ---
-
-Python is a high level language which is used by most of the people for data science and Iots.
+Python is a high level language which is used by most of the people for data science and IoT.
 
 ## Titles
 

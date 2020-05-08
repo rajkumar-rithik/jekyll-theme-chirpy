@@ -29,6 +29,9 @@
 .post-preview {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   border-bottom: 1px solid var(--main-border-color);
   >h1 {
     font-size: 1.4rem;
@@ -40,13 +43,14 @@
   .post-content {
     margin-top: .6rem;
     margin-bottom: .6rem;
+    margin-left: 0.8rem;
     color: var(--post-list-text-color);
     >p { /* Make preview shorter in Home page*/
       margin: 0;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
     }
   }
@@ -97,9 +101,43 @@
 } // .page-item
 
 
+.post-preview>.post-image>a>img {
+  border-radius: 4px;
+}
+
+.post-image {
+  position: relative;
+  display: inline;
+}
+
+.post-image >a>img {
+  filter: brightness(65%);
+}
+
+.post-title {
+  position: absolute;
+  color: white;
+  margin-left: 0.6rem;
+  bottom: 0.2rem;
+  text-align: left;
+  >h1 {
+    font-weight: bold;
+  }
+}
+
 @media all and (max-width: 576px) {
   #post-list .post-meta>span i:not(:first-child) {
     margin-left: 1rem;
+  }
+  .post-preview {
+    flex-direction: column;
+    margin-left: 0rem;
+  }
+  .post-image >a>img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 240px;
   }
 }
 

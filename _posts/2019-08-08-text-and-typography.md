@@ -4,6 +4,7 @@ author: Cotes Chung
 date: 2020-04-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
+cover: https://dz2cdn2.dzone.com/thumbnail?fid=13407873&w=280&h=190
 ---
 
 This Jekyll template totally compatible with Markdown syntax. Now, let's take a look for the text and typography in this theme.

@@ -1,10 +1,5 @@
 # The Site Settings
 # v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2017-2019 Cotes Chung
-# MIT licensed
-
-
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
@@ -18,7 +13,7 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'https://blog.online-python.com'
+url: 'http://localhost:4000'
 
 author: your_full_name                  # change to your full name
 

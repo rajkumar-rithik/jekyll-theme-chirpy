@@ -38,7 +38,7 @@ layout: default
 
         {% assign record = site.data.updates | where: "filename", filename | first %}
 
-        {% if record %}
+        <!-- {% if record %}
         <div>
           Updated
           <span class="timeago lastmod"
@@ -48,7 +48,7 @@ layout: default
             <i class="unloaded">{{ record.lastmod | date_to_xmlschema}}</i>
           </span>
         </div>
-        {% endif %}
+        {% endif %} -->
 
         <!-- page views -->
         {% if site.google_analytics.pv.enabled %}
