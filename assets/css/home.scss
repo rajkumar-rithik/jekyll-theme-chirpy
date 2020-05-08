@@ -131,7 +131,9 @@
   }
   .post-preview {
     flex-direction: column;
-    margin-left: 0rem;
+    .post-content {
+      margin-left: 0rem;
+    }
   }
   .post-image >a>img {
     margin-left: 0;
