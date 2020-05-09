@@ -24,8 +24,8 @@
 }
 
 .post-preview {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -39,11 +39,10 @@
   }
   .post-content {
     margin-top: .6rem;
-    margin-bottom: .6rem;
     margin-left: 0.8rem;
     color: var(--post-list-text-color);
     >p { /* Make preview shorter in Home page*/
-      margin: 0;
+      margin-bottom: 0.6rem;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
@@ -108,17 +107,20 @@
 }
 
 .post-image >a>img {
-  filter: brightness(65%);
+  filter: brightness(60%);
 }
 
 .post-title {
   position: absolute;
   color: white;
   margin-left: 0.6rem;
+  margin-right: 0.6rem;
   bottom: 0.2rem;
   text-align: left;
   >h1 {
-    font-weight: 500;
+    font-size: 150%;
+    font-variant: petite-caps;
+    font-weight: bold;
   }
 }
 
@@ -140,11 +142,9 @@
   }
 
   .post-title {
-    margin-left: 1.4rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
     bottom: 0.5rem;
-    >h1 {
-      font-weight: bold;
-    }
   }
 }
 
