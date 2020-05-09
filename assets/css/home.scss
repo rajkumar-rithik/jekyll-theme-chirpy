@@ -43,6 +43,7 @@
     color: var(--post-list-text-color);
     >p { /* Make preview shorter in Home page*/
       margin-bottom: 0.6rem;
+      word-spacing: 1px;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
