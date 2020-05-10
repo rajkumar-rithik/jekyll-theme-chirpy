@@ -1,5 +1,3 @@
----
----
 /*!
 * The main styles.
 * v2.0
@@ -66,8 +64,6 @@ body {
 
 /*--- sidebar layout ---*/
 
-$tab-height: 3.3rem;
-$tab-cursor-height: 1.6rem;
 $tab-count: {{ site.data.tabs | size }};
 
 $sidebar-display: "sidebar-display";
@@ -84,7 +80,7 @@ $sidebar-display: "sidebar-display";
   background: rgb(42, 30, 107);
   background: var(--sidebar-bg);
   a {
-    @include sidebar-icon;
+    @include sidebar-links;
   }
   .sidebar-bottom {
     .icon-border+a { // the icon behide mode-toggle
@@ -172,7 +168,7 @@ $sidebar-display: "sidebar-display";
 
     #mode-toggle-wrapper {
       i {
-        @include sidebar-icon;
+        @include sidebar-links;
         margin-right: 0;
         font-size: 1.05rem;
         text-align: center;
@@ -230,11 +226,9 @@ $sidebar-display: "sidebar-display";
   img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-transition: all .5s !important;
-    -moz-transition: all .5s !important;
-    transition: all .5s !important;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    transition: transform .5s;
     &:hover {
       -ms-transform: scale(1.2);
       -moz-transform: scale(1.2);
@@ -242,13 +236,13 @@ $sidebar-display: "sidebar-display";
       transform: scale(1.2);
     }
   }
-} // #
+} // #avatar
 
 
 #site-title {
   text-align: center;
   a {
-    color: var(--site-title-color);
+    // color: var(--site-title-color);
     font-weight: 900;
     font-size: 1.5rem;
     letter-spacing: .5px;
@@ -328,7 +322,6 @@ $sidebar-display: "sidebar-display";
   border: 1px solid var(--search-wrapper-bg);
   background: var(--search-wrapper-bg);
   padding: 0 .5rem;
-  transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
   i {
     z-index: 2;
     font-size: .9rem;
@@ -397,6 +390,7 @@ $sidebar-display: "sidebar-display";
     }
   }
   >div {
+    max-width: 100%;
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
@@ -925,6 +919,7 @@ table {
   box-shadow: none;
   border-color: var(--input-focus-border-color) !important;
   background: center !important;
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 /*--- Responsive Design ---*/
@@ -1194,6 +1189,10 @@ table {
     margin-left: 0!important;
   }
 
+  #search-results>div {
+    max-width: 700px;
+  }
+
   #site-subtitle {
     font-size: 90%;
     @include ml-mr(1rem);
@@ -1229,9 +1228,6 @@ table {
     justify-content: center!important;
   }
 
-  #search-results>div {
-    max-width: 700px;
-  }
 }
 
 
@@ -1517,4 +1513,9 @@ table {
   #panel-wrapper {
     margin-left: 41px;
   }
+}
+
+.post-cover-image {
+  width: 100%;
+  height: 100%;
 }
