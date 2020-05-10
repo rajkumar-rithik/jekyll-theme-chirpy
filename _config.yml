@@ -1,16 +1,11 @@
 # The Site Settings
 # v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2017-2019 Cotes Chung
-# MIT licensed
-
-
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
 title: Data Science                          # the main title
 
-tagline: Learn to listen Data.  # it will display as the sub-title
+tagline: Learn to listen the Data   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -18,14 +13,15 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'http://localhost:4000'
+# url: 'http://localhost:4000'
+url: 'https://blog.online-python.com'
 
 author: your_full_name                  # change to your full name
 
 avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
 github:
-  username: github_username             # change to your github username
+  username: rajkumar-rithik             # change to your github username
 
 twitter:
   username: twitter_username            # change to your twitter username
@@ -49,7 +45,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Asia/Kolkata
 
 google_analytics:
   # Fill with your Google Analytics ID
