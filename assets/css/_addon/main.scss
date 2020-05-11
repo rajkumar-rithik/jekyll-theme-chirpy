@@ -892,7 +892,7 @@ table {
 }
 
 .topbar-up {
-  top: -3rem !important; /* same as topbar height. */
+  top: 0rem !important; /* same as topbar height. */
 }
 
 .no-text-decoration {
@@ -920,6 +920,10 @@ table {
   border-color: var(--input-focus-border-color) !important;
   background: center !important;
   transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.addthis_inline_share_toolbox {
+  margin-top: 0.4rem;
 }
 
 /*--- Responsive Design ---*/
@@ -1214,6 +1218,11 @@ table {
 
 /* Pannel hidden */
 @media all and (max-width: 1199px) {
+
+  .addthis_inline_share_toolbox {
+    display: none;
+  }
+
   #panel-wrapper {
     display: none;
   }
