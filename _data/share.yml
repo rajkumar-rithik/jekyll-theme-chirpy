@@ -25,7 +25,10 @@ platforms:
     type: Linkedin
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/shareArticle?mini=true&url=URL&title=TITLE"
-
+  -
+    type: Whatsapp
+    icon: "fab fa-whatsapp-square"
+    link: "https://wa.me/?text=URL"
 
   # Uncomment below if you need to.
   # -

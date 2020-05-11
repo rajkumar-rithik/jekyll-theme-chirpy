@@ -253,6 +253,9 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
       &.fa-weibo {
         @include btn-sharing-color(rgb(229, 20, 43));
       }
+      &.fa-whatsapp-square {
+        @include btn-sharing-color(rgb(79, 206, 93));
+      }
     }
 
   } // .share-icons
@@ -289,6 +292,14 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
 
 @media all and (max-width: 576px) {
+  .share-wrapper{
+    .share-label {
+      display: none;
+    }
+    .share-icons {
+      font-size: 2rem;
+    }
+  }
   .post-tail-bottom {
     -ms-flex-wrap: wrap-reverse!important;
     flex-wrap: wrap-reverse!important;
