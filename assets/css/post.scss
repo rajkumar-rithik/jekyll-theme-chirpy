@@ -256,6 +256,9 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
       &.fa-whatsapp-square {
         @include btn-sharing-color(rgb(79, 206, 93));
       }
+      &.fa-linkedin {
+        @include btn-sharing-color(rgb(0, 97, 146));
+      }
     }
 
   } // .share-icons
