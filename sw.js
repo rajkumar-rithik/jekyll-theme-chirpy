@@ -8,7 +8,7 @@ layout: compress
 
 self.importScripts('{{ "/assets/data/cache-list.js" | relative_url }}');
 
-var cacheName = 'chirpy-{{ "now" | date: "%Y%m%d.%H%M" }}';
+var cacheName = 'online-python-{{ "now" | date: "%Y%m%d.%H%M" }}';
 
 self.addEventListener('install', (e) => {
   self.skipWaiting();
