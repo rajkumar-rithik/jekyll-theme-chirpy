@@ -10,9 +10,10 @@ layout: page
     <div class="post-image">
       <!-- <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> -->
       <a href="{{ site.baseurl }}{{ post.url }}"><img border="0" alt="Data Science" src="{{ post.cover }}" width="220px" height="140px">
-      <div class="post-title"><h1>{{ post.title }}</h1></div></a>
+      <div class="post-title"><h1>{{ post.title | truncate: 60 }}</h1></div></a>
     </div>
     <div class="post-content">
+      <!-- <a href="{{ site.baseurl }}{{ post.url }}"><h1>{{ post.title | truncate: 70 }}</h1></a> -->
       <p>
       {% assign _content = post.content %}
       {% include no-linenos.html %}
@@ -21,11 +22,11 @@ layout: page
 
     <div class="post-meta text-muted">
       <!-- posted date -->
-      <i class="far fa-clock fa-fw"></i>
+      <i class="far fa-calendar-alt fa-fw"></i>
       <span class="timeago" data-toggle="tooltip" data-placement="bottom"
         title="{{ post.date | date: site.data.date_format.tooltip }}">
       {{ post.date | date: site.data.date_format.post }}
-      <i class="unloaded">{{ post.date | date_to_xmlschema }}</i>
+      <!-- <i class="unloaded">{{ post.date | date_to_xmlschema }}</i> -->
       </span>
       <!-- page views -->
       {% if site.google_analytics.pv.enabled %}

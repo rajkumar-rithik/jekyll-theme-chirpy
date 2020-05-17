@@ -922,10 +922,24 @@ table {
   transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    position: relative;
+    bottom: 3rem;
+  }
+  to {
+    opacity: 1;
+    position: relative;
+    bottom: 0;
+  }
+}
+
 .addthis_inline_share_toolbox {
   margin-top: 0.4rem;
   margin-left: auto;
   margin-right: 1.2rem;
+  animation: fade-down .6s;
 }
 
 /*--- Responsive Design ---*/
@@ -1146,7 +1160,7 @@ table {
   }
 
   .topbar-up {
-    box-shadow: none !important;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.05);
   }
 
   #topbar-title {
