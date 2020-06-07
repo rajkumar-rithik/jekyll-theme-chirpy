@@ -1,5 +1,5 @@
 ---
-title: Python Advanced Tutorial for Beginners
+title: Red Hat Summit - 2020 Concept to Reality An Advanced Agile Blue Print | India
 author: Raj Kumar
 date: 2020-05-11 11:33:00 +0800
 categories: [Python, Advanced]
